@@ -2,7 +2,7 @@
 
 # test bash script for wiping SD cards blank
 #pre-req: must have sdtool in the same directory as this bash 
-#         chmod u=wrx bash_sd_eric4.sh
+#         chmod u=wrx bash_sd.sh
 umount /dev/mmcblk0* #unmount sd card 
 sudo ./sdtool /dev/mmcblk0 unlock #unlock sd card using sdtool - command format: ./sdtool device( /dev/mmcblk0) command( unlock, status, lock, permlock, reset)
 wipefs -a /dev/mmcblk0 #wipe all signiture off the sd card - Clear all partitions 
