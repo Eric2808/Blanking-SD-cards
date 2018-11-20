@@ -18,5 +18,5 @@ w
 EOF
 
 mkfs.vfat /dev/mmcblk0p1 # format the partition that was created.
-#sync 
-exit 0
+sync 
+
